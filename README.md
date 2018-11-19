@@ -25,14 +25,7 @@ To compile LiraPay the following list of tools and their plugins are required:
 - Apache Cordova Plugin - android
 
 # Compile Instruction
-This portion of the documentation assumes that the above tools are already installed. For information look up search engines for the complete instruction on how to install the required tools. 
+For information on how to install and operate the required tools above, please look up search engines for the complete instructions.
 
-The user must create a cordova project and merge the application source-code into the www folder.
-
-The application can be compiled in both Debug and Release modes. Debug mode is recommended as it requires less than the Release mode to compile.
-
-To compile the application with Debug option: simply open your project directory and type in your terminal: 
-cordova build 
-
-When installing the the application, the application may require the user to have their device secuirty set to allow the installation of unsigned applications (debugable APKs), this can be done by browsing the device's settings page and changing the app security settings.
+To compile the project, the user must create a cordova project and merge the application source-code into the www folder.
 
