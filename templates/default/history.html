@@ -1,0 +1,42 @@
+<div class="page" id="history">
+  <div class="page_title">
+    Payment History
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content" id="payment_history_container" style="overflow-y: scroll; float: left;">
+    <div class="page_content_title">
+      Transaction Logs
+      <div style="clear: both;">
+      </div>
+    </div>
+    <div id="empty_notice">
+      <div class="tx_container" id="fetching_new_transaction" style="position: absolute; border-bottom: 0; width: 30px; height: 30px; left: calc(50% - 30px); text-align: center; display: block; opacity: 0;">
+        <div style="width: 100%; height: 100%; background-color: white; float: left; margin-top: -50px; border-radius: 50px; padding: 5px; box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);">
+          <img src="templates/default/img/reload_spinner.svg" style="width: 100%; height: 100%; float: left;">
+        </div>
+      </div>
+      <div class="tx_container" id="fetching_new_transaction_progress" style="border-bottom: 0; text-align: center; display: none;">
+        Loading new transactions...
+      </div>
+      <div class="tx_container" id="nodata_transaction_history" style="border-bottom: 0; text-align: center; display: none;">
+        No data to display.
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+    <div id="payment_history" style="border-top: solid 1px #eee;">
+      {wallet_txs}
+    </div>
+    <div id="empty_notice_footer">
+      <div class="tx_container" id="loading_transaction" onclick="_app._ui_update_transactions_load_more();" style="text-align: center; display: none; float: left;">
+        Load More
+      </div>
+      <div class="tx_container" id="loading_transaction_progress" style="text-align: center; display: none; float: left;">
+        Loading more transactions...
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+  </div>
+</div>

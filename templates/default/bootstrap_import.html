@@ -1,0 +1,18 @@
+<div class="page_wide" id="bootstrap_import">
+  <span class="element_center_stage splash_logo" style="margin-top: 20%;">
+    LiraPay
+  </span>
+  <span class="page_content" style="color: white; margin-top: 30px; float: left; width: 100%; text-align: center;">
+    <b>Import Existing Wallet</b>
+  </span>
+  <div class="page_content"  style="color: white; float: left; width: 100%; text-align: center; margin-top: 70px;">
+    <input type="text"  onfocus="_app._ui_toggle_buttons();" onblur="_app._ui_toggle_buttons_out();" id="import_wallet_key_value" placeholder="    Enter Private Key" class="create_new_wallet_input">
+    <i class="fas fa-qrcode navigation" id="import_wallet_qrcode" portal_command="core._ui_qrscan_import_key(document.getElementById('import_wallet_password_value').value);" style="color: rgba(255,255,255,0.3);"></i>
+    <br>
+    <input type="number"  onfocus="_app._ui_toggle_buttons();" onblur="_app._ui_toggle_buttons_out();" id="import_wallet_password_value" placeholder="Create Wallet Pin" class="create_new_wallet_input password_input" style="width: calc(80% - 44px);">
+    <br>
+    <a href="" class="navigation" portal_command="core._web3_import_wallet(document.getElementById('import_wallet_key_value').value, document.getElementById('import_wallet_password_value').value);" portal="bootstrap_process" style="position: fixed; bottom: 125px; width: 50%; color: white; margin-top: 20px; left: calc(25% - 40px); border: solid 1px white; padding: 10px 40px 10px 40px; border-radius: 2px; margin-top: 50px;">Proceed</a>
+    <a href="" class="navigation" portal="bootstrap" style="position: fixed; bottom: 75px; width: 50%; color: white; margin-top: 20px; left: calc(25% - 40px); border: solid 1px white; padding: 10px 40px 10px 40px; border-radius: 2px; margin-top: 10px;">Back to Menu</a>
+  </div>
+  <span class="app_version" id="app_version_text">{app_version}</span>
+</div>

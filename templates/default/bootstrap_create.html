@@ -1,0 +1,16 @@
+<div class="page_wide" id="bootstrap_create">
+  <span class="element_center_stage splash_logo" style="margin-top: 20%;">
+    LiraPay
+  </span>
+  <span class="page_content" style="color: white; margin-top: 30px; float: left; width: 100%; text-align: center;">
+    <b>Create A New Wallet</b>
+  </span>
+  <div class="page_content"  style="color: white; float: left; width: 100%; text-align: center; margin-top: 70px;">
+    <input id="create_wallet_password_value"  onfocus="_app._ui_toggle_buttons();" onblur="_app._ui_toggle_buttons_out();" type="number" placeholder="     Create Wallet Pin" class="create_new_wallet_input password_input">
+    <i class="fas fa-lock" id="info_cirlc_icon" style="color: rgba(255,255,255,0.3);"></i>
+    <br>
+    <a href="" class="navigation" portal_command="_app._web3_create_wallet_info(document.getElementById('create_wallet_password_value').value);" portal="bootstrap_process" style="position: fixed; bottom: 125px; width: 50%; color: white; margin-top: 20px; left: calc(25% - 40px); border: solid 1px white; padding: 10px 40px 10px 40px; border-radius: 2px; margin-top: 50px;">Proceed</a>
+    <a href="" class="navigation" portal="bootstrap" style="position: fixed; bottom: 75px; width: 50%; color: white; margin-top: 20px; left: calc(25% - 40px); border: solid 1px white; padding: 10px 40px 10px 40px; border-radius: 2px; margin-top: 10px;">Back to Menu</a>
+  </div>
+  <span class="app_version" id="app_version_text">{app_version}</span>
+</div>

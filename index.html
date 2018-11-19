@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+	  <meta name="description" content="A dedicated cryptocurrency wallet for Lira Cash.">
+	  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	  <meta name="author" content="Jennifer Angel">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="templates/default/css/index.css" type="text/css"/>
+		<link rel="stylesheet" href="templates/default/css/fonts.css" type="text/css"/>
+		<link rel="stylesheet" href="templates/default/css/tillium.css" type="text/css"/>
+		<link rel="stylesheet" href="templates/default/css/ubuntu.css" type="text/css"/>
+  </head>
+	<body>
+    <div id="app">
+			<div id="app_content" style="float: left; width: 100%; height: 100%;">
+				<div class="page_wide" id="splash">
+				  <span class="element_center_stage splash_logo">
+						LiraPay
+					</span>
+				  <span id="splash_loading">
+				    <img src="templates/default/img/spinner.svg" style="width: 30px; margin-bottom: 20px;">
+				    <br>
+				    Loading assets...
+					</span>
+				</div>
+			</div>
+      <div class="popups_container" id="popups_list" style="position: absolute; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; display: none; background-color: rgba(0,0,0,0.4);">
+			</div>
+      <div class="navigation_list" id="navigation_list">
+        <i id="dashboard_nav_button" class="fas fa-home navigation nav_icon" portal_default="portal_default" portal="dashboard"><br><span style="font-size: 10px; font-family: 'Titillium Web', sans-serif;">Dashboard</span></i>
+        <i id="history_nav_button" class="fas fa-list navigation nav_icon" portal="history"><br><span style="font-size: 10px; font-family: 'Titillium Web', sans-serif;">History</span></i>
+        <i id="settings_nav_button" class="fas fa-cog navigation nav_icon" portal="settings"><br><span style="font-size: 10px; font-family: 'Titillium Web', sans-serif;">Settings</span></i>
+        <i id="help_nav_button" class="fas fa-question-circle navigation nav_icon" portal_popup="help"><br><span style="font-size: 10px; font-family: 'Titillium Web', sans-serif;">Help</span></i>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="templates/default/js/sha3.min.js"></script>
+  <script type="text/javascript" src="templates/default/js/web3.min.js"></script>
+  <script type="text/javascript" src="templates/default/js/elliptic.js"></script>
+  <script type="text/javascript" src="templates/default/js/qrcode.js"></script>
+  <script type="text/javascript" src="templates/default/js/aes.js"></script>
+  <script type="text/javascript" src="templates/default/js/abi-decoder.js"></script>
+  <script type="text/javascript" src="templates/default/js/ethereum/ethereumjs-all/ethereumjs-all-2017-10-31.min.js"></script>
+  <script type="text/javascript" src="assets/letra.js"></script>
+  <script type="text/javascript" src="assets/app.js"></script>
+  <script type="text/javascript" src="assets/bootstrap.js"></script>
+</html>

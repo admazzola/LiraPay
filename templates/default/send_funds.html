@@ -1,0 +1,40 @@
+<div class="page" id="send_funds">
+  <div class="page_title">
+    Transfer Funds
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content">
+    <div class="page_content_container">
+      <div class="page_content_title">
+        Send Funds
+        <div style="clear: both;">
+        </div>
+      </div>
+      <div class="send_funds_presenter">
+        <i class="fas fa-wallet send_funds_presenter_wallet_icon"></i>
+        <i class="fas fa-chevron-right send_funds_presenter_chevron_icon"></i>
+        <i class="fas fa-user send_funds_presenter_user_icon"></i>
+      </div>
+      <div class="send_funds_content">
+        <a class="navigation" portal_command="core._ui_qrscan_invoice();">Pay In Lira</a>
+      </div>
+      <div class="send_funds_content">
+
+        <input class="text_input" type="number" onblur="_app._ui_toggle_buttons_out();" onfocus="_app._ui_toggle_buttons(); this.style.borderColor = '#eeeeee'; document.getElementById('send_funds_amount_input_error').style.visibility = 'hidden';" placeholder="0.00" id="send_funds_amount_input">
+        <span class="error_notice" id="send_funds_amount_input_error" style="visibility: hidden; float: left; width: 100%; font-size: 10px; color: red;">Invalid Amount</span>
+        <input class="text_input" type="text" onblur="_app._ui_toggle_buttons_out();" onfocus="_app._ui_toggle_buttons(); this.style.borderColor = '#eeeeee'; document.getElementById('send_funds_address_input_error').style.visibility = 'hidden';" placeholder="     Enter Recipient" id="send_funds_address_input">
+        <i class="navigation text_input fas fa-qrcode" id="send_funds_qrcode" portal_command="core._ui_qrscan_wallets();"></i>
+        <span class="error_notice" id="send_funds_address_input_error" style="visibility: hidden; float: left; width: 100%; font-size: 10px; color: red;">Invalid Address</span>
+      </div>
+      <div class="send_funds_content">
+      </div>
+      <div class="dual_button_container" id="dual_button_container">
+        <input type="button" class="dual_button_left navigation" portal_command="core._ui_proceed_send_funds(document.getElementById('send_funds_amount_input').value, document.getElementById('send_funds_address_input').value );" value="Proceed">
+        <input type="button" class="dual_button_right navigation" portal="dashboard" value="Cancel">
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="page" id="send_funds_authentication">
+  <div class="page_title">
+    Transfer Funds
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content">
+    <div class="page_content_container">
+      <div class="page_content_title">
+        Authentication
+        <div style="clear: both;">
+        </div>
+      </div>
+      <div class="send_funds_presenter">
+        <i class="fas fa-lock send_funds_presenter_padlock_icon"></i>
+      </div>
+      <div class="send_funds_content">
+        Enter your pin to continue:
+      </div>
+      <div class="send_funds_content" style="margin-top: 20px;">
+        <input type="number" onblur="_app._ui_toggle_buttons_out();" id="send_funds_password_input" pattern="[0-9]*" placeholder="    Enter Pin" onfocus="_app._ui_toggle_buttons(); this.style.borderColor = '#eeeeee'; document.getElementById('send_funds_password_input_error').style.visibility = 'hidden';" placeholder="" class="text_input password_input">
+        <i class="fas fa-eye" onclick="_app._ui_input_to_text_toggle(document.getElementById('send_funds_password_input'), this, '180, 180, 180');" id="show_password_text" style="border-bottom: solid 1px #eee; color: rgba(180, 180, 180, 0.3); margin-top: 6px;"></i>
+        <span class="error_notice" id="send_funds_password_input_error" style="visibility: hidden; float: left; width: 100%; font-size: 10px; color: red;">Invalid Password</span>
+      </div>
+      <div class="dual_button_container" id="dual_button_container">
+        <input type="button" class="dual_button_left navigation" portal_command="core._ui_authenticate_send_funds(document.getElementById('send_funds_password_input').value );" value="Verify">
+        <input type="button" class="dual_button_right navigation" portal="dashboard" value="Cancel">
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2018-07-18:v1.0.0
+
+# This is the default section for entries. Files listed under this header (or immediately after the CACHE MANIFEST) will be explicitly cached after they're downloaded for the first time.
+CACHE:
+
+# Files listed in this section may come from the network if they aren't in the cache, otherwise the network isn't used, even if the user is online. You can white-list specific URLs here, or simply "*", which allows all URLs. Most sites need "*".
+NETWORK:
+*
+
+# An optional section specifying fallback pages if a resource is inaccessible. The first URI is the resource, the second is the fallback used if the network request fails or errors. Both URIs must from the same origin as the manifest file. You can capture specific URLs but also URL prefixes. "images/large/" will capture failures from URLs such as "images/large/whatever/img.jpg".
+FALLBACK:

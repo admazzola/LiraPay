@@ -1,0 +1,43 @@
+<div class="page" id="send_funds_confirmation">
+  <div class="page_title">
+    Transfer Funds
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content">
+    <div class="page_content_container">
+      <div class="page_content_title">
+        Confirm Transaction
+        <div style="clear: both;">
+        </div>
+      </div>
+      <div class="send_funds_presenter">
+        <i class="fas fa-wallet send_funds_presenter_wallet_icon"></i>
+        <i class="fas fa-chevron-right send_funds_presenter_chevron_icon"></i>
+        <i class="fas fa-user send_funds_presenter_user_icon"></i>
+      </div>
+      <div class="send_funds_content">
+        You are sending...
+        <br>
+        <b><span id="send_funds_amount">0.00000000</span> LIRA</b>
+        <br>
+        <br>
+        To:
+        <br>
+        <span id="send_funds_address">0x...</span>
+        <br>
+        <br>
+        Gas Cost:
+      </div>
+      <div class="send_funds_content" style="height: 10px; margin-top: 0;">
+        <span id="send_funds_gas" style="height: 30px;"><img src="templates/default/img/spinner_white.svg" style="width: 30px;"></span>
+      </div>
+      <div id="send_funds_buttons_container">
+        <input type="button" class="navigation dual_button_left" portal_command="core._ui_confirm_send_funds();" value="Confirm">
+        <input type="button" class="navigation dual_button_right" portal="dashboard" value="Cancel">
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+  </div>
+</div>

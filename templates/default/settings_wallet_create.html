@@ -1,0 +1,30 @@
+<lass="page" id="settings_import_wallet" style="text-align: center;">
+  <div class="page_title">
+    Add New Wallet
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content_title">
+    Create Wallet
+    <div style="clear: both;">
+    </div>
+  </div>
+  <div class="page_content"  style="float: left; width: 100%; text-align: center; margin-top: -50px;">
+    <div class="page_content_container">
+      <div class="send_funds_presenter">
+        <i class="fas fa-wallet send_funds_presenter_chevron_icon" style="font-size: 80px;"></i>
+      </div>
+      <div class="send_funds_content">
+        Enter Authentication Details:
+      </div>
+      <div class="send_funds_content">
+        <input class="text_input" type="number" onblur="_app._ui_toggle_buttons_out();" onfocus="_app._ui_toggle_buttons(); this.style.borderColor = '#eeeeee'; document.getElementById('send_funds_amount_input_error').style.visibility = 'hidden';" placeholder="Enter PIN" id="add_wallet_input">
+        <span class="error_notice" id="add_wallet_input_error" style="visibility: hidden; float: left; width: 100%; font-size: 10px; color: red;">Invalid PIN</span>
+      </div>
+      <div id="send_funds_buttons_container">
+        <input type="button" class="navigation dual_button_left"  portal_command="core._web3_create_wallet_info(document.getElementById('add_wallet_input').value, true);" portal="settings_wallet_create_process" value="Create">
+        <input type="button" class="navigation dual_button_right" portal="settings_add_wallet" value="Cancel">
+      </div>
+    </div>
+  </div>
+</div>

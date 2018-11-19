@@ -1,0 +1,57 @@
+<div id="page_pop" style="background-color: white; font-size: 16px; margin-left: 20px; margin-top: 30px; border-radius: 2px; box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08); float: left;">
+  <h3 style="width: calc(100% - 20px); float: left; padding-top: 20px; padding-left: 20px; margin-top: 0; margin-bottom: 0; padding-bottom: 20px; border-bottom: solid 1px #eee;">Help & Documentation</h3>
+  <div onscroll="_app._ui_scroll_callback(this, document.getElementById('page_pop_top_shadow'), document.getElementById('page_pop_bottom_shadow'));" id="page_pop_content" style="width: calc(100% - 40px); height: calc(100% - 170px); -webkit-overflow-scrolling: auto; overflow-scrolling: auto; border-bottom: solid 1px #eee; font-size: 14px; text-align: left; padding: 20px; padding-top: 15px; padding-bottom: 15px; word-break: break-word; overflow-y: scroll; overflow-x: hidden;">
+    Below is a breif list of instructions that you can use as a guide for this app. To access more documentation, please visit the Lira Cash website at: <a href="http://www.lira.cash/documentations">http://www.lira.cash/documentations</a>
+    <ul type="none" style="padding: 0;">
+      <li>
+        <p>
+          <h4 style="margin-bottom: 5px;">Creating & Importing Wallet</h4>
+          You can use LiraPay to create or import existing ethereum based wallets.
+        </p>
+        <p>
+          You can create and import a wallet after installation. Additonal wallets can also be added in the <b>Settings</b> menu by clicking <b>Add New Wallet</b>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <h4 style="margin-bottom: 5px;">Send & Receive funds</h4>
+          To send funds click <b>Send</b> on the Dashboard menu, following the instructions and input the required details. Each transaction will require authentication (by entering PIN) and a variable gas fee in Gwei. To understand how the gas fee works, read the official Ethereum documentation <a href="http://ethdocs.org/en/latest/contracts-and-transactions/account-types-gas-and-transactions.html?highlight=gas#what-is-gas">here</a>.
+        </p>
+        <p>
+          Other users can send LIRA to your account. You can send your wallet address to other users by clicking <b>Share</b>. Other users can also scan your wallet address' QR code from the <b>Receive Funds</b> page accessible from the <b>Dashboard</b> menu.
+        </p>
+      </li>
+      <li>
+        <p>
+          <h4 style="margin-bottom: 5px;">Payments using LiraPay</h4>
+          The LiraPay mobile application will be designed to work with the LiraPay Pro (for Merchants). Using the LiraPay mobile app you can quickly pay for goods and services by scanning the invoice QR code provided to you by your merchant in their invoices.
+        </p>
+        <p>
+          To do this, simply click <b>Send</b> from the <b>Dashboard</b> menu and click <b>Pay with Lira</b> in the following page and proceed to complete your payment.
+        </p>
+      </li>
+      <li>
+        <p>
+          <h4 style="margin-bottom: 5px;">Transaction Logs</h4>
+          All transactions are archived in the Ethereum network. Your transaction logs can accessed directly from the LiraPay app or in any Ethereum Transaction explorers such as Etherscan (<a href="https://etherscan.io">https://etherscan.io</a>).
+        </p>
+        <p>
+          To view a transaction detail, click on a transaction from the <b>Dashboard</b> or <b>History</b> menu to display the time, amount of funds sent/received, hash, payee, and gas cost (in Gwei).
+        </p>
+      </li>
+      <li>
+        <p>
+          <h4 style="margin-bottom: 5px;">Wallet Security</h4>
+          Your wallet data is secured using industry standard encryption in your mobile device. Your PIN encrypts your wallet private key stored in the <b>wallets.json</b> file included with the app. It is important to note that when disposing of the app (uninstalling) the data must also be erased if not erased automatically by the system. This can be done by accessing your mobile device's storage main folder and removing the wallet data file called <b>wallets.json</b>.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div id="page_pop_bottom_shadow" style="width: calc(100% - 40px); height: 12px; position: absolute; margin-top: -13px; background: url(templates/default/img/popup_shadow_bottom.png) bottom no-repeat; opacity: 0.6; background-size: 100%, 12px; display: none;">
+  </div>
+  <div id="page_pop_top_shadow" style="width: calc(100% - 40px); height: 12px; position: absolute; margin-top: -12px; background: url(templates/default/img/popup_shadow_top.png) bottom no-repeat; opacity: 0.6; background-size: 100%, 12px; top: 107px; display: none;">
+  </div>
+  <div style="clear: both;">
+  </div>
+</div>
+<input type="button" id="page_pop_button" class="dual_button_left navigation" onclick="document.getElementById('popups_list').style.display = 'none';" value="Ok" style="margin-left: 40px; margin-top: -50px;">

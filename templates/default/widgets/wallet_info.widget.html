@@ -1,0 +1,14 @@
+<div class="template" id="template_wallet_info">
+  <span class="wallet_container">
+    <input type="radio" name="listed_wallet" onclick="_app._ui_select_default_wallet({wid});" {def} style="float: left; width: 20px;">
+    <span class="wallet_container_info">
+      {wallet_address}
+    </span>
+    <span class="wallet_container_selector_radio">
+      <span style="float: left; text-align: left; margin-left: 5px;">
+        ...
+      </span>
+      <a onclick="_app._web3_remove_wallet({wid});">remove</a>
+    </span>
+  </span>
+</div>

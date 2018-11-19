@@ -1,0 +1,14 @@
+<div class="page_wide" id="bootstrap_entrance">
+  <span class="element_center_stage splash_logo" style="margin-top: 20%;">
+    LiraPay
+  </span>
+  <span class="page_content" style="color: white; margin-top: 30px; float: left; width: 100%; text-align: center;">
+    <b>Enter Wallet Pin</b>
+  </span>
+  <div class="page_content"  style="color: white; float: left; width: 100%; text-align: center; margin-top: 70px;">
+    <input type="number" onfocus="_app._ui_toggle_buttons();" onblur="_app._ui_toggle_buttons_out();" id="bootstrap_entrance_password"  pattern="[0-9]*" placeholder="    Enter Pin" class="create_new_wallet_input password_input">
+    <i class="fas fa-eye" onclick="_app._ui_input_to_text_toggle(document.getElementById('bootstrap_entrance_password'), this, '255,255,255');" id="show_password_text" style="color: rgba(255,255,255,0.3);"></i>
+    <a class="navigation" portal="bootstrap_process" portal_command="core._ui_password_validation_process();" style="position: fixed; bottom: 75px; width: 50%; color: white; margin-top: 20px; left: calc(25% - 40px); border: solid 1px white; padding: 10px 40px 10px 40px; border-radius: 2px; margin-top: 10px;">Proceed</a>
+  </div>
+  <span class="app_version" id="app_version_text">{app_version}</span>
+</div>

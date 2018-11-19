@@ -1,0 +1,102 @@
+body{ padding: 0px 0px 54px 0px; top: 0; left: 0; margin: 0; font-size: 12px; color: #333; text-align: left; font-family: 'Titillium Web', sans-serif; letter-spacing: 1px; }
+input{ color: white; }
+a{ color: #3575e0; text-decoration: none; }
+
+#app{ float: left; width: 100%; height: 100%; }
+#empty_notice{ float: left; width: 100%; height: auto; }
+.navigation_list{ width: 100%; height: 56px; font-weight: normal; position: fixed; box-shadow: 0 0px 2px 0 rgba(0,0,0,0.10); overflow: hidden; bottom: 0; background-color: white; text-align: center; font-size: 10px; color: #6e6e6e; z-index: 3; }
+.nav_icon{ line-height: 20px; font-size: 20px; width: calc(25% - 3px); height: 100%; padding: 10px 0px 10px 0px; background-color: #fff; }
+.contact_icon{ font-size: 14px; width: 25px; }
+.chevron_icon{ font-size: 12px; width: 25px; text-align: right; float: right; margin-top: 6px; }
+
+.page{ display: block; margin-top: 40px;}
+.page_title{ width: calc(100% - 20px); font-weight: bold; font-size: 14px; text-align: center; color: white; padding: 10px; background-color: #3575e0; box-shadow: 0px 0px 5px rgba(0,0,0,0.40); position: fixed; top: 0; left: 0;}
+.page_inline_button{ float: left; width: calc(100% + 20px); font-size: 14px; padding: 10px 0 10px 0; margin-top: 15px; margin-left: -10px; text-align: center; }
+.page_inline_button_inner{ width: 170px; margin: auto; text-align: center; }
+.page_content{ width: 100%; font-size: 14px; text-align: left; overflow: hidden; }
+.page_content_container{ width: 100%; text-align: center; font-size: 14px; float: left; }
+.page_content_container_left{ width: calc(100% - 10px); text-align: left; font-size: 14px; float: left; padding: 10px 15px 10px 15px; margin-left: -10px; }
+.page_wide{ position: fixed; z-index: 4; top: 0; left: 0; text-align: center; width: 100%; height: 100%; display: block; background-color: #fff; }
+.page_content_title{ float: left; width: calc(100% - 20px); color: #4573be; font-size: 14px; padding: 10px; background-color: #eee; font-weight: bold; text-align: center; }
+
+.dual_button_container{ width: calc(100% - 10px); height: auto; position: fixed; left: 0; padding: 5px; bottom: 56px; background-color: #f5f5f5; box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.1); }
+.dual_button_left{ float: left; width: 49%; outline: none; cursor: pointer; border: solid 1px #3575e0; border-radius: 2px; background-color: #3575e0; padding: 5px 40px 5px 40px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); font-size: 16px; }
+.dual_button_center{ float: left; width: 50%; margin-left: calc(25% - 40px); outline: none; cursor: pointer; border: solid 1px #3575e0; border-radius: 2px; background-color: #3575e0; padding: 5px 40px 5px 40px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); font-size: 16px; }
+.dual_button_right{ float: right; width: 49%; outline: none; cursor: pointer; border: solid 1px #3575e0; border-radius: 2px; background-color: #3575e0; padding: 5px 40px 5px 40px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); font-size: 16px; }
+
+.template{ }
+.carousel{ width: calc(100% - 20px); font-size: 14px; text-align: left; padding: 10px 10px 0px 10px; border-bottom: solid 1px #eee; }
+.carousel_title{ float: left; width: 100%; margin-bottom: 10px; }
+
+.wallet_container{ float: left; width: 100%; overflow: hidden; text-align: left; padding: 5px 0 5px 0; }
+.wallet_container_selector_radio{ float: right; width: 25%; text-align: right; }
+.wallet_container_info{ float: left; width: calc(75% - 30px); overflow: hidden; }
+.element_center_stage{ float: left; width: 100%; margin-top: calc(50% + 60px); }
+
+#bootstrap_entrance{ z-index: 4; background-color: #3575e0; }
+#bootstrap_result_error{ z-index: 4; background-color: #3575e0; }
+#bootstrap_result_success{ z-index: 4; background-color: #3575e0; }
+#bootstrap_tos{ z-index: 4; background-color: #3575e0; }
+#bootstrap_process{ z-index: 4; background-color: #3575e0; }
+#bootstrap_import{ z-index: 4; background-color: #3575e0; }
+#bootstrap_create{ z-index: 4; background-color: #3575e0; }
+#bootstrap{ z-index: 4; background-color: #3575e0; }
+#splash{ z-index: 5; display: block; background-color: #3575e0; }
+#splash_loading{ float: left; width: 100%; font-size: 13px; letter-spacing: 2px; margin-top: calc(50% - 30px); color: white; }
+.splash_logo{ font-size: 60px; font-family: 'Ubuntu', sans-serif; font-style: italic; font-weight: bold; letter-spacing: 0; color: white; }
+#presenter{ position: fixed; width: 100%; height: 100px;  margin: auto; font-weight: bold; font-family: 'Ubuntu', sans-serif; text-align: center; padding: 40px 0 0px 0px; background-color: #3575e0; box-shadow: 0px 0px 5px rgba(0,0,0,0.40); color: white; }
+#presenter_balance_container{ width: 100%; height: 50px; display: inline-block; vertical-align: middle; text-align: center; }
+#token_name{ float: left; width: 100%; height: auto; font-size: 18px; text-align: center; padding: 5px 0px 20px 0px; color: white; border-bottom: solid 1px #eee; }
+
+.tiny_text{ font-size: 11px; color: #bbb; padding: 3px; }
+
+
+#add_wallet_input{ float: left; outline: 0; text-align: center; width: calc(100% - 45px); margin-left: 15px; padding: 8px; color: #212121; border: 0; border-bottom: solid 1px #eee; font-size: 16px; }
+
+.send_funds_presenter{ width: 60%; margin: auto; margin-top: 90px; color: #eee; }
+.send_funds_content{ width: 100%; font-size: 16px; float: left; margin: auto; margin-top: 50px; }
+#send_funds_buttons_container{ float: left; width: 80%; height: 50px; margin-left: 10%; margin-top: 50px; }
+#send_funds_amount_input{ float: left; outline: 0; text-align: center; width: calc(100% - 45px); margin-left: 15px; padding: 8px; color: #212121; border: 0; border-bottom: solid 1px #eee; font-size: 40px; }
+#send_funds_address{ font-size: 11px; color: #bbb; padding: 3px; }
+#send_funds_gas{ font-size: 11px; color: #bbb; padding: 3px; }
+#send_funds_address_input{ float: left; outline: 0; text-align: center; width: calc(100% - 65px); margin-left: 15px; padding: 8px; border: 0; border-bottom: solid 1px #eee; font-size: 16px; margin-top: 20px; color: #212121; }
+#send_funds_password_input{ float: left; outline: 0; text-align: center; width: calc(100% - 65px); margin-left: 15px; padding: 8px; border: 0; border-bottom: solid 1px #eee; font-size: 16px; margin-top: 0px; color: #212121; }
+#send_funds_qrcode{ width: 20px; font-size: 20px; float: left; margin-top: 26px; padding-bottom: 9px; border-bottom: solid 1px #eee; color: #eee; }
+.send_funds_presenter_wallet_icon{ font-size: 60px; float: left; }
+.send_funds_presenter_chevron_icon{ font-size: 30px; margin-top: 15px; }
+.send_funds_presenter_padlock_icon{ font-size: 60px; }
+.send_funds_presenter_user_icon{ font-size: 60px; float: right; }
+#send_funds_success_presenter{ float: left; font-size: 14px; width: 100%; margin-top: calc(25% - 40px); color: #212121; line-height: 90px; font-family: 'Ubuntu', sans-serif; }
+#send_funds_failed_presenter{ float: left; font-size: 14px; width: 100%; margin-top: calc(25% - 40px); color: #212121; line-height: 90px; font-family: 'Ubuntu', sans-serif; }
+#send_funds_process_presenter{ float: left; font-size: 14px; width: 100%; margin-top: calc(25% - 20px); color: #212121; line-height: 90px; font-family: 'Ubuntu', sans-serif; }
+#send_funds_process_details{ float: left; width: calc(100% - 60px); border-radius: 3px; line-height: 20px; font-size: 14px; background-color: #f5f5f5; margin-left: 30px; padding: 20px 0 20px 0; font-family: 'Ubuntu', sans-serif; }
+#send_funds_process_presenter_spinner{ width: 110px; margin-bottom: 10px; }
+
+.request_funds_presenter{ width: 60%; margin: auto; margin-top: 90px; color: #eee; }
+.request_funds_content{ width: 100%; font-size: 16px; float: left; margin: auto; margin-top: 50px; }
+#request_funds_buttons_container{ float: left; width: 80%; height: 50px; margin-left: 10%; margin-top: 20px; }
+#request_funds_amount_input{ float: left; outline: 0; text-align: center; width: calc(100% - 45px); margin-left: 15px; padding: 8px; color: #212121; border: 0; border-bottom: solid 1px #eee; font-size: 40px; }
+#request_funds_address_input{ float: left; outline: 0; text-align: center; width: calc(100% - 65px); margin-left: 15px; padding: 8px; border: 0; border-bottom: solid 1px #eee; font-size: 16px; margin-top: 20px; color: #212121; }
+#request_funds_qrcode{ width: 20px; font-size: 20px; float: left; margin-top: 25px; padding-bottom: 9px; border-bottom: solid 1px #eee; color: #eee; }
+.request_funds_presenter_wallet_icon{ font-size: 60px; float: left; }
+.request_funds_presenter_chevron_icon{ font-size: 30px; margin-top: 15px; }
+.request_funds_presenter_user_icon{ font-size: 60px; float: right; }
+#request_funds_process_presenter{ float: left; width: 100%; font-size: 18px; margin-top: calc(25% - 20px); color: #212121; line-height: 90px; font-family: 'Ubuntu', sans-serif; }
+#request_funds_process_details{ float: left; width: calc(100% - 60px); border-radius: 3px; line-height: 20px; font-size: 14px; background-color: #f5f5f5; margin-left: 30px; padding: 20px 0 20px 0; font-family: 'Ubuntu', sans-serif; }
+#request_funds_process_presenter_spinner{ width: 130px; margin-bottom: 10px; }
+
+.password_input { -webkit-text-security: disc; }
+.tx_container_column{ float: left; width: 33%; }
+.tx_container{ width: calc(100% - 20px); font-size: 14px; padding: 10px; border-bottom: solid 1px #eee; }
+.contact_send_funds_button{ float: right; width: 30%; text-align: right; }
+.plus-icon{ font-size: 12px; float: left; margin-top: 6px; }
+.bootstrap_button{ loat: right; width: 100%; outline: none; cursor: pointer; border: solid 1px #3575e0; border-radius: 2px; background-color: gold; padding: 10px 40px 10px 40px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); font-size: 16px; color: #212121; }
+.create_new_wallet_input{ float: left; outline: 0; text-align: center; width: calc(80% - 64px); margin-left: calc(10% + 15px); padding: 8px; border: 0; border-bottom: solid 1px #fff; font-size: 16px; margin-top: 20px; color: white; background-color: transparent; }
+.create_new_wallet_input::placeholder{ color: white; font-size: 14px; font-family:  'Titillium Web', sans-serif;  }
+#import_wallet_qrcode{ width: 20px; font-size: 20px; float: left; margin-top: 26px; padding-bottom: 9px; border-bottom: solid 1px #fff; color: #fff; }
+#info_cirlc_icon{ width: 20px; font-size: 20px; float: left; margin-top: 26px; padding-bottom: 9px; border-bottom: solid 1px #fff; color: #fff; }
+#show_password_text{ width: 20px; font-size: 20px; float: left; margin-top: 26px; padding-bottom: 9px; border-bottom: solid 1px #fff; color: #fff; }
+.app_version{ position: fixed; bottom: 10px; left: 0; color: white; text-align: center; width: 100%; }
+#recent_transactions{ width: 100%; float: left; }
+#payment_history{ width: 100%; font-size: 14px; text-align: left; float: left; }
+.tx_list_icon{ color: #dedede; }
